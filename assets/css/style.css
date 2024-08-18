@@ -1177,10 +1177,9 @@ a {
     margin-bottom: 48px;
     width: 371px;
 }
-
-.footer__form {
+.footer__send-email {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     column-gap: 20px;
     margin-top: 24px;
 }
@@ -1202,6 +1201,23 @@ a {
     opacity: 0.7;
 }
 
+.error {
+    margin-top: 4px;
+    color: red;
+    font-size: 1.4rem;
+    font-style: italic;
+    visibility: hidden;
+}
+
+.footer__form:has(:invalid:not(:placeholder-shown)) .error {
+    visibility: inherit;
+}
+
+.footer__send-email:has(:invalid)  .footer__btn {
+    opacity: 0.5;
+    cursor: default;
+}
+
 .footer__btn {
     background: #7264D6;
 }
@@ -1209,7 +1225,7 @@ a {
 .footer__contact-list {
     display: flex;
     column-gap: 100px;
-    margin-top: 54px;
+    margin-top: 50px;
 }
 
 .footer__contact {

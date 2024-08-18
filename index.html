@@ -574,10 +574,13 @@
                         <h3 class="footer__title">Head Office</h3>
                         <p class="footer__desc">Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565</p>
                         <h3 class="footer__title">News letter</h3>
-                        <form action="" class="footer__form">
-                            <input type="text" class="footer__form-input" placeholder="Email address...">
+                        <div class="footer__send-email">
+                            <form action="" class="footer__form">
+                                <input type="email" name="email" class="footer__form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email address..." required>
+                                <p class="error">*Enter your email</p>
+                            </form>
                             <a href="#!" class="btn footer__btn btn-small">Subscribe</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="footer__contact-list">
