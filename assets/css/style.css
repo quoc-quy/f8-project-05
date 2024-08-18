@@ -211,6 +211,7 @@ a {
 
  .hero__form-group {
     width: 100%;
+    margin-top: 40px;
     padding: 8px;
     border-radius: 8px;
     background: #FFF;
@@ -1220,6 +1221,7 @@ a {
 
 .footer__form-group{
     align-items: flex-start;
+    margin-top: 24px;
 }
 
 .footer__form-input {
