@@ -115,10 +115,6 @@ a {
     visibility: inherit;
 }
 
-.form-group:has(:invalid)  .btn-submit {
-    cursor: default;
-}
-
 /* ================== Header ================ */
 
 .header {
