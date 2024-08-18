@@ -1029,10 +1029,14 @@ a {
 .blog-item__more {
     display: inline-block;
     margin-top: 20px;
-    color: #7264D6;
+    color: #696D76;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.62;
+}
+
+.blog-item__more:hover {
+    color: #7264D6;
 }
 
 /* =============================== App ====================== */
