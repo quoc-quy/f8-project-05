@@ -79,9 +79,12 @@
                         <p class="section-label" data-aos="fade-up" data-aos-duration="1500">Digital Smart Wallet</p>
                         <h1 class="hero__heading" data-aos="fade-up" data-aos-duration="1550">Digital <b class="attract">Payment</b> For Everyone.</h1>
                         <p class="section-desc hero__desc" data-aos="fade-up" data-aos-duration="1600">We bring together eveything that’s required to build websites and apps that accept payments and send payouts globally. We are the best platform.</p>
-                        <form action="" class="hero__form" data-aos="fade-up" data-aos-duration="1700">
-                            <input type="email" class="hero__form-input" placeholder="Your email address">
-                            <a href="" class="btn hero__form-btn">Get Started</a>
+                        <form action="" class="hero__form-group form-group" data-aos="fade-up" data-aos-duration="1700">
+                            <div class="form-input">
+                                <input type="email" name="email" class="hero__form-email form-email" placeholder="Your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                <p class="error header__error">*Enter your email</p>
+                            </div>
+                            <button type="submit" class="btn btn-submit hero__form-btn">Get Started</button>
                         </form>
                         <p class="hero__note" data-aos="fade-up" data-aos-duration="1700">*We’ll respect the inbox and never share your email.</p>
                     </div>
@@ -574,18 +577,18 @@
                         <h3 class="footer__title">Head Office</h3>
                         <p class="footer__desc">Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22, Charlottesville, CA 45565</p>
                         <h3 class="footer__title">News letter</h3>
-                        <div class="footer__send-email">
-                            <form action="" class="footer__form">
+                        <form action="" class="form-group footer__form-group">
+                            <div action="" class="footer__form form-email">
                                 <input type="email" name="email" class="footer__form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email address..." required>
-                                <p class="error">*Enter your email</p>
-                            </form>
-                            <a href="#!" class="btn footer__btn btn-small">Subscribe</a>
-                        </div>
+                                <p class="footer__error error">*Enter your email</p>
+                            </div>
+                            <button type="submit" class="btn btn-submit footer__btn btn-small">Subscribe</button>
+                        </form>
                     </div>
                 </div>
                 <div class="footer__contact-list">
-                    <a href="#!" class="footer__contact">email@gmail.com</a>
-                    <a href="#!" class="footer__contact">(123) 456-7890</a>
+                    <a href="mailto:email@gmail.com" class="footer__contact">email@gmail.com</a>
+                    <a href="tel:(123) 456-7890" class="footer__contact">(123) 456-7890</a>
                 </div>
             </section>
         </div>

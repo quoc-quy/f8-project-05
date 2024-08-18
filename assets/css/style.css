@@ -93,6 +93,32 @@ a {
     line-height: 1.25;
 }
 
+.error {
+    margin-top: 4px;
+    color: red;
+    font-size: 1.2rem;
+    font-style: italic;
+    visibility: hidden;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
+.btn-submit {
+    border: none;
+    cursor: pointer;
+}
+
+.form-group:has(:invalid:not(:placeholder-shown)) .error {
+    visibility: inherit;
+}
+
+.form-group:has(:invalid)  .btn-submit {
+    cursor: default;
+}
+
 /* ================== Header ================ */
 
 .header {
@@ -183,25 +209,33 @@ a {
     margin-top: 20px;
 }
 
-.hero__form {
-    display: flex;
-    margin-top: 40px;
-    padding: 8px 8px 8px 0;
+ .hero__form-group {
     width: 100%;
+    padding: 8px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+ }
+
+.form-input{
+    position: relative;
+    width: 100%;
 }
 
-.hero__form-input {
-    padding-left: 23px;
-    max-width: 100%;
-    flex-grow: 1;
+.hero__form-email {
+    width: 100%;
+    padding: 15px;
     outline: none;
     border: none;
 }
 
-.hero__form-input::placeholder {
+.header__error {
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+}
+
+.hero__form-email::placeholder {
     color: #696D76;
     font-size: 1.6rem;
     font-weight: 400;
@@ -1184,6 +1218,10 @@ a {
     margin-top: 24px;
 }
 
+.footer__form-group{
+    align-items: flex-start;
+}
+
 .footer__form-input {
     padding-left: 12px;
     width: 270px;
@@ -1201,31 +1239,15 @@ a {
     opacity: 0.7;
 }
 
-.error {
-    margin-top: 4px;
-    color: red;
-    font-size: 1.4rem;
-    font-style: italic;
-    visibility: hidden;
-}
-
-.footer__form:has(:invalid:not(:placeholder-shown)) .error {
-    visibility: inherit;
-}
-
-.footer__send-email:has(:invalid)  .footer__btn {
-    opacity: 0.5;
-    cursor: default;
-}
-
 .footer__btn {
     background: #7264D6;
+    margin-left: 20px;
 }
 
 .footer__contact-list {
     display: flex;
     column-gap: 100px;
-    margin-top: 50px;
+    margin-top: 54px;
 }
 
 .footer__contact {
